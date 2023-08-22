@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    background:rgb(53, 53, 83); 
+}
+.container{
+    width:400px;
+    padding: 25px 25px;
+    position: absolute;
+    top: 20%;
+    justify-content: center;
+    left:33.5%;
+    background:white;
+    transform:translate3d(-50%,-50%,-50%);
+    border-radius: 12px;
+}
+.container p{
+    font-family:'Roboto Mono',sans-serif ;
+    margin-bottom: 25px;
+    font-size: 25px;
+    width:90%;
+}
+.container input{
+    border-radius: 10px;
+    padding:10px;
+    height: 25px ;
+    outline: 0;
+    margin:0;
+    border-color: rgb(144, 105, 38);
+    
+    border:3px solid rgb(144, 105, 38);
+    width:90%;
+    max-height: auto;
+    
+    
+    box-shadow: 10%;
+}
+.container button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(44, 116, 211);
+    font-family: 'Monteserrat',sans-serif;
+    color: rgb(238, 243, 243);
+    font-size: 18px;
+    font-weight: 500;
+    width: 98%;
+    border:3px solid rgb(28, 214, 214);
+}
+#imgbox{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    transition:1s;
+}
+#imgbox img{
+    border-radius: 10px;
+    justify-content: center;
+    border-color: rgb(253, 253, 253);
+    
+}
+#imgbox.show-img{
+   
+    padding: 10px;
+}
+.container button:hover{
+   background-color: rgb(49, 87, 170);
+  
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform:translateX(0);
+    }
+    25%{
+        transform:translateX(-2px);
+    }
+    50%{
+        transform:translateX(0);
+    }
+    75%{
+        transform:translateX(2px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
